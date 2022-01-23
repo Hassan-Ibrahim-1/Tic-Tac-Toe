@@ -32,7 +32,7 @@ def main():
 def player1_choice():
     choice = input("Player 1: do you want to play as X or O: ")
 
-    while choice not in ["x", "o", "X", "O"]:
+    while choice.lower() not in ["x", "o"]:
         clear()
         print("Invalid choice")
         time.sleep(0.4)
@@ -65,7 +65,7 @@ def choose_pos():
 
     player1_pos = int(input("\nPlayer 1: Please choose a position (1-9): "))
 
-    while player1_pos not in range(0, 10):
+    while player1_pos not in range(1, 10):
         clear()
         print("Invalid Value")
         time.sleep(0.4)
@@ -99,7 +99,7 @@ def choose_pos():
 
     player2_pos = int(input("\nPlayer 2: Please choose a position (1-9): "))
 
-    while player2_pos not in range(0, 10):
+    while player2_pos not in range(1, 10):
         clear()
         print("Invalid Value")
         time.sleep(0.4)
